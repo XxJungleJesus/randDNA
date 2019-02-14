@@ -10,6 +10,12 @@ string randDNA( int seed, string bases, int lett)
 	string rand;
 	uniform_int_distribution<int>un(0, bases.size()-1);
 	
+	if (bases.size() ==0)
+	{
+		rand="";
+		return rand;
+	}
+	
 	for (int i=0; i<lett; i++)
 	{
 		rand+= bases[un (eng1)];
